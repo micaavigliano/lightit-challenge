@@ -9,7 +9,7 @@ React, context API, Typescript, TailwindCSS, React Testing Library
 ## How to run the app
 
 - clone the repo
-- run `npm install` to install all the dependencies
+- run `npm install` to install all the dependencies (take in consideration that the version of npm should be > `12.0.0`)
 - run `npm run start`
 - there is a bundle of test if you want to run them and check the coverage you can run `npm run test:coverage`
 
