@@ -1,4 +1,5 @@
-import { render, screen, act, renderHook } from "@testing-library/react";
+import React from "react";
+import { render, screen, act } from "@testing-library/react";
 import useDataFetching from "../useDataFetching";
 
 describe("useDataFetching Custom Hook", () => {
@@ -14,6 +15,8 @@ describe("useDataFetching Custom Hook", () => {
       website: "",
       id: 0,
     };
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (global as any).fetch = jest.fn(() =>
       Promise.resolve({
         json: () => Promise.resolve(mockData),

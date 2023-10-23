@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# Getting Started with lightit-challenge
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+React, context API, Typescript, TailwindCSS, React Testing Library
 
-### `npm start`
+## How to run the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- clone the repo
+- run `npm install` to install all the dependencies
+- run `npm run start`
+- there is a bundle of test if you want to run them and check the coverage you can run `npm run test:coverage`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What did I do
 
-### `npm test`
+- This application is a patient data management where the user is able to add and edit the users.
+- The application is fully accessible, I added focus management so all the interactive elements can be navigated using the keyboard.
+- The application is responsive, can be used on mobile devices.
+- When the user creates or edits it appears a Modal with a Form
+- When the user creates or edits it appears a notification that announces the user what happened. Also, this notification is accessible because it is a live-region which announces the Accessibilit API that that place on the code must be announced by assistive technologies when appears.
+- I used the library `dayjs` to format the date on `created_at`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What I want to improve
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I want to add more test cases
+- I want to create more reusable components
